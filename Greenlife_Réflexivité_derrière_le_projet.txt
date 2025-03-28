@@ -1,0 +1,42 @@
+Greenlife : Réflexivité derrière le projet 
+
+Message écologique : 
+Notre message central est le suivant :
+« Chaque choix du quotidien a un impact environnemental. En connaître les effets est le premier pas vers un mode de vie plus durable. »
+
+Idée :
+Nous avons choisi de développer une application interactive capable d’estimer les émissions de CO₂ d’un utilisateur en fonction de ses habitudes quotidiennes (type de transport, alimentation, consommation énergétique dans son appartement, ...).
+
+
+L’objectif de notre application est de rendre visibles les émissions de CO₂ générées par des gestes simples (prendre la voiture, consommer de la viande, chauffer son logement, etc.).
+En permettant à l’utilisateur de simuler son empreinte carbone personnalisée, nous l’aidons à prendre conscience de ses habitudes et à identifier les axes de changement possibles.
+
+- Une interface simple qui guide l’utilisateur pas à pas.
+
+- Un résultat chiffré et explicite de ses émissions.
+
+- Des suggestions ou messages de sensibilisation intégrés à la fin du parcours.
+
+- Des visuels générés par IA qui illustrent l’impact de certains comportements (ex : voiture individuelle vs vélo).
+
+
+
+Outils :
+- React + TypeScript + Vite ont été utilisés pour développer l'application avec une architecture front-end moderne, rapide et modulaire. Le choix de Vite a permis un développement fluide grâce au hot module replacement (HMR).
+
+- Le projet utilise une configuration ESLint avancée, incluant @typescript-eslint, eslint-plugin-react-x, et eslint-plugin-react-dom pour assurer la qualité, la lisibilité et la maintenabilité du code.
+→ Cela garantit un bon respect des conventions de développement, des règles strictes de typage, et une meilleure gestion des erreurs potentielles dès la phase de développement.
+
+- Python + Scikit-learn ont été utilisés pour l’aspect prédictif (modèle léger de CO₂ selon les réponses utilisateurs). Les résultats sont ensuite intégrés à l'application front-end via des appels API ou via une logique embarquée si simplifiée.
+
+- ChatGPT a été utilisé pour générer les textes pédagogiques, les messages de sensibilisation, ainsi que pour brainstormer sur l’UX et les flows utilisateurs.
+
+
+Défis :
+Un des premiers défis a été de structurer un formulaire clair et rapide à remplir, tout en conservant une bonne précision sur les résultats. Nous avons également rencontré des difficultés à trouver des données cohérentes et françaises pour certains usages spécifiques.
+Ces problèmes ont été surmontés en simplifiant certaines variables et en se basant sur des moyennes nationales issues de sources comme l’ADEME et l’INSEE.
+
+Bilan :
+Nous sommes satisfaits de l’impact visuel et pédagogique de l’application : elle permet à chacun de voir concrètement l’impact de ses choix et d’être encouragé à les améliorer qui intégre :
+
+Des recommandations personnalisées pour réduire son empreinte, un système de score écolo à partager,une gamification pour augmenter l’engagement.
